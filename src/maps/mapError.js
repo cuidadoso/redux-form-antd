@@ -1,10 +1,10 @@
 export const getValidateStatus = (touched, error, warning, valid) => {
   if (touched) {
-    if (error) return "error";
-    if (warning) return "warning";
-    if (valid) return "success";
+    if (error) return 'error';
+    if (warning) return 'warning';
+    if (valid) return 'success';
   }
-  return "";
+  return '';
 };
 
 export const defaultTo = (value, d) => {
@@ -23,8 +23,10 @@ const mapError = ({
   help: touched && (error || warning)
 });
 
-export const customMap = customPropsFun => props => (
-  [props].reduce(customPropsFun || (mappedProps => mappedProps), mapError(props))
-);
+export const customMap = (customPropsFun) => (props) =>
+  [props].reduce(
+    customPropsFun || ((mappedProps) => mappedProps),
+    mapError(props)
+  );
 
 export default mapError;

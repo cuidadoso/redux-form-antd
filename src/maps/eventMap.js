@@ -1,6 +1,6 @@
-import { customMap } from "./mapError";
+import { customMap } from './mapError';
 
 export default customMap((mapProps, { input: { onChange } }) => ({
   ...mapProps,
-  onChange: v => onChange(v.target.value)
+  onChange: (v) => onChange(v.target.value)
 }));

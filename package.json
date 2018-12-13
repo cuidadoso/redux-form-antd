@@ -17,7 +17,8 @@
     "predeploy": "npm run build-storybook",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "t": "echo 1"
+    "t": "echo 1",
+    "prettier": "prettier --write \"**/*.js\""
   },
   "peerDependencies": {
     "antd": "^3.2.1",

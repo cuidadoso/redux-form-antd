@@ -1,6 +1,6 @@
-import Input from "antd/lib/input";
-import textFieldMap from "../maps/textFieldMap";
-import createComponent from "./BaseComponent";
+import Input from 'antd/lib/input';
+import textFieldMap from '../maps/textFieldMap';
+import createComponent from './BaseComponent';
 
 const { TextArea } = Input;
 

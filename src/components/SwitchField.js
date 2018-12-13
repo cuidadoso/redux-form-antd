@@ -1,8 +1,8 @@
-import Switch from "antd/lib/switch";
-import { customMap } from "../maps/mapError";
-import createComponent from "./BaseComponent";
+import Switch from 'antd/lib/switch';
+import { customMap } from '../maps/mapError';
+import createComponent from './BaseComponent';
 
-const switchMap = customMap((mapProps, {input: {value}}) => ({
+const switchMap = customMap((mapProps, { input: { value } }) => ({
   ...mapProps,
   checked: value
 }));

@@ -1,12 +1,12 @@
-import React from "react";
-import Radio from "antd/lib/radio";
-import Select from "antd/lib/select";
+import React from 'react';
+import Radio from 'antd/lib/radio';
+import Select from 'antd/lib/select';
 
 const Option = Select.Option;
 const RadioGroup = Radio.Group;
 const RadioButton = Radio.Button;
 
-const withOptions = (OptionType, getType) => Component => {
+const withOptions = (OptionType, getType) => (Component) => {
   class C extends React.PureComponent {
     constructor(p) {
       super(p);
@@ -47,9 +47,9 @@ const withOptions = (OptionType, getType) => Component => {
     }
   }
   C.defaultProps = {
-    valueKey: "value",
-    labelKey: "label",
-    optionsKey: "options"
+    valueKey: 'value',
+    labelKey: 'label',
+    optionsKey: 'options'
   };
   return C;
 };

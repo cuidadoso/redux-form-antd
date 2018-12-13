@@ -1,19 +1,15 @@
-import React, { PureComponent } from "react";
-import FormItem from "antd/lib/form/FormItem";
+import React, { PureComponent } from 'react';
+import FormItem from 'antd/lib/form/FormItem';
 
 export default function createComponent(AntdComponent, mapProps) {
   class InputComponent extends PureComponent {
-    constructor(p) {
-      super(p);
-      this.initComponentRef.bind(this);
-    }
     getRenderedComponent() {
       return this.componentRef;
     }
 
-    initComponentRef(r) {
+    initComponentRef = (r) => {
       this.componentRef = r;
-    }
+    };
 
     render() {
       const {
