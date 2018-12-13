@@ -3,7 +3,7 @@ import FormItem from 'antd/lib/form/FormItem';
 
 export default function createComponent(AntdComponent, mapProps) {
   class InputComponent extends PureComponent {
-    getRenderedComponent() {
+    getRenderedComponent = () => {
       return this.componentRef;
     }
 

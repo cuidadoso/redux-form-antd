@@ -8,15 +8,10 @@ const RadioButton = Radio.Button;
 
 const withOptions = (OptionType, getType) => (Component) => {
   class C extends React.PureComponent {
-    constructor(p) {
-      super(p);
-      this.initContainerRef.bind(this);
-      this.getContainerRef.bind(this);
-    }
-    initContainerRef(r) {
+    initContainerRef = (r) => {
       this.container = r;
-    }
-    getContainerRef() {
+    };
+    getContainerRef = () => {
       return this.container;
     }
     render() {
