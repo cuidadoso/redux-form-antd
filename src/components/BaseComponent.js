@@ -3,12 +3,14 @@ import FormItem from 'antd/lib/form/FormItem';
 
 export default function createComponent(AntdComponent, mapProps) {
   class InputComponent extends PureComponent {
-    getRenderedComponent = () => {
-      return this.componentRef;
+    constructor(p) {
+      super(p);
+      this.state = {
+        componentRef: this
+      };
     }
-
-    initComponentRef = (r) => {
-      this.componentRef = r;
+    getRenderedComponent() {
+      return this.state.componentRef;
     };
 
     render() {
@@ -28,7 +30,7 @@ export default function createComponent(AntdComponent, mapProps) {
       return (
         <FormItem
           label={label}
-          ref={this.initComponentRef}
+          ref={this.state.componentRef}
           wrapperCol={wrapperCol}
           labelCol={labelCol}
           help={help}

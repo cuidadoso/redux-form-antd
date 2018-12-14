@@ -15,6 +15,6 @@ export { default as SwitchField } from './components/SwitchField';
 export { default as NumberField } from './components/NumberField';
 export { default as SliderField } from './components/SliderField';
 
-export * from './components/DatePicker';
+export {DatePickerField, DatePickerFieldRU, MonthPickerField} from './components/DatePicker';
 
 export { createComponent, customMap };
