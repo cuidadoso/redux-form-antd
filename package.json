@@ -7,7 +7,7 @@
   "homepage": "https://zhdmitry.github.io/redux-form-antd",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhdmitry/redux-form-antd"
+    "url": "https://github.com/cuidadoso/redux-form-antd"
   },
   "scripts": {
     "build": "npm run build:lib && npm run build:es",
