@@ -1,5 +1,5 @@
 {
-  "name": "redux-form-antd",
+  "name": "redux-form-ant",
   "version": "3.1.4",
   "description": "antd redux form bindings",
   "main": "./lib/index.js",
