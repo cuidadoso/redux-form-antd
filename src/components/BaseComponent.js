@@ -11,7 +11,7 @@ export default function createComponent(AntdComponent, mapProps) {
     }
     getRenderedComponent() {
       return this.state.componentRef;
-    };
+    }
 
     render() {
       const {
