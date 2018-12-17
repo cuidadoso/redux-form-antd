@@ -6,7 +6,7 @@ export default function createComponent(AntdComponent, mapProps) {
     constructor(p) {
       super(p);
       this.state = {
-        componentRef: this
+        componentRef: React.createRef()
       };
     }
     getRenderedComponent() {

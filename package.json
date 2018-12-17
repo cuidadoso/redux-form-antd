@@ -1,6 +1,6 @@
 {
   "name": "bcs-redux-form-antd",
-  "version": "3.1.5",
+  "version": "3.1.7",
   "description": "antd redux form bindings",
   "main": "./lib/index.js",
   "jsnext:main": "./es/index.js",
@@ -9,6 +9,7 @@
     "type": "git",
     "url": "https://github.com/cuidadoso/redux-form-antd"
   },
+  "publishConfig":{"registry":"https://artifactory.gitlab.bcs.ru/artifactory/api/npm/bcs-uk-ui/"},
   "scripts": {
     "build": "npm run build:lib && npm run build:es",
     "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",

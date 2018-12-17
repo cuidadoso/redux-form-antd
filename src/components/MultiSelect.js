@@ -10,13 +10,14 @@ const withOptions = (OptionType, getType) => (Component) => {
   class C extends React.PureComponent {
     constructor(p) {
       super(p);
-      this.state = {
-        container: this
-      };
+      this.initContainerRef = this.initContainerRef.bind(this);
+      this.getContainerRef = this.getContainerRef.bind(this);
     }
-
+    initContainerRef(r) {
+      this.container = r;
+    }
     getContainerRef() {
-      return this.state.container;
+      return this.container;
     }
     render() {
       const props = this.props;
